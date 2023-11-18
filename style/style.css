@@ -8,9 +8,12 @@ body {
     font-weight: lighter;
 }
 
-/* * {
+/* this is for testing only */
+/*
+* {
     border: 3px solid red;
-} */
+} 
+*/
 
 .header-1,.header-2 {
     background-color: #c8e6c9; 
@@ -22,16 +25,22 @@ body {
     height: 72px;
     display: flex;
     justify-content: space-between;
+    padding-right: 100px;
 }
 
 .header-2 {
     display: flex;
     justify-content: space-between;
-    /*padding-top: 10px; */
-    padding: 20px 30px;
+    /* use background image for this section */
+    background-image: url(../images/background-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* set size to cover will make bg img covers the whole box */
+    background-size: cover;
 }
 
 .contents-1 {
+    margin: 20px 50px;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -104,6 +113,10 @@ ul {
 
 .category {
     margin: 40px;
+    padding: 5px;
+    border: 3px solid #c8e6c9;
+    border-radius: 5px;
+    box-shadow: inset;
 }
 
 .icon-img {
@@ -116,11 +129,19 @@ ul {
 }
 
 .copyright {
-    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: lighter;
 }
 
 .category img {
     width: 200px;
     height: 200px;
+}
+
+.category .text {
+    font-size: 12px;
+}
+
+.hdr-img {
+    padding-right: 0px;
 }
